@@ -3,10 +3,10 @@
   <h1  style="margin-right: 120px; color: green;">PVO HAPPY NEW YEAR 2022</h1>
 </div>
 <div class="row">
-  <div class="col-7">
-    <h3 style="text-align: center;">รหัสพนักงาน</h3>
-    <div class="row">
-      <div class="part" style="width: 100px; ">
+  <div class="col-7" >
+    <h3 style="text-align: center; font-size: 50px; margin-top: 100px; margin-bottom: 30px;">รหัสพนักงาน</h3>
+    <div class="row" style="text-align: center;">
+      <div class="part" style="width: 150px; margin-left: 150px;">
         <ul
           class="items1"
           [style.transform]="( 'translateY( -' + ( slot_index_1 * 85 ) + 'px )' )">
@@ -19,7 +19,7 @@
         </ul>
       </div>
 
-      <div class="part" style="width: 100px;">
+      <div class="part" style="width: 150px;">
         <ul
           class="items2"
           [style.transform]="( 'translateY( -' + ( slot_index_2 * 85 ) + 'px )' )">
@@ -32,7 +32,7 @@
         </ul>
       </div>
 
-      <div class="part" style="width: 100px;">
+      <div class="part" style="width: 150px;">
         <ul
           class="items3"
           [style.transform]="( 'translateY( -' + ( slot_index_3 * 85 ) + 'px )' )">
@@ -45,7 +45,7 @@
         </ul>
       </div>
 
-      <div class="part" style="width: 100px;">
+      <div class="part" style="width: 150px;">
 
         <ul
           class="items4"
@@ -59,7 +59,7 @@
         </ul>
       </div>
 
-      <div class="part" style="width: 100px;">
+      <div class="part" style="width: 150px;">
 
         <ul
           class="items5"
@@ -73,18 +73,18 @@
         </ul>
       </div>
       <div class="parts">
-        <div class="part2">
-          <div  style="text-align: center; font-size: 40px;" [hidden]="visibleState">
+        <div class="part2" style="text-align: center;">
+          <div  style="text-align: center; font-size: 50px; margin-bottom: 30px;margin-top: 30px;" [hidden]="visibleState">
             ชื่อ-นามสกุล:{{UserData}}
           </div>
 
         </div>
       </div>
-      <div  [hidden]="visibleState"  style="text-align: center; color: white;font-size: 40px;">
+      <div  [hidden]="visibleState"  style="text-align: center; color: white;font-size: 50px;">
         แผนก:{{department}}
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center; margin-top: 50px;">
         <button class="btn btn-primary"  [disabled]="isLoading" (click)="generateName()"><i class="fa" [ngClass]="{'fa-spin fa-spinner': isLoading, 'fa-check': !isLoading}"></i> Generate Sprint Name</button>
 
 
@@ -93,9 +93,9 @@
 
 
   </div>
-  <div class="col-5" style="color: white;">
-    <h4>  รางวัล "{{giftname}}" จำนวน "{{qty}}" รางวัล</h4>
-    <h4>  จับรางวัลไปแล้ว {{draw}} ครั้ง </h4>
+  <div class="col-5" style="color: white; font-size: 25px; margin-top: 70px;">
+    <h2>  รางวัล "{{giftname}}" จำนวน "{{qty}}" รางวัล</h2>
+    <h2>  จับรางวัลไปแล้ว {{draw}} ครั้ง </h2>
 
 
    <table class="table table-dark">
